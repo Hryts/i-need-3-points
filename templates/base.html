@@ -1,0 +1,19 @@
+{% load static %}
+<!doctype html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+		<title>My first website</title>
+	</head>
+	<body>
+		{% include 'hat.html' %}
+		<main>
+			<div class="main-content">
+				{% block content %}{% endblock %}
+			</div>
+		</main>
+		{% include 'footer.html' %}
+
+	</body>
+</html>
